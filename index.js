@@ -15,6 +15,13 @@ App.get("/users",(req,res)=>{
         message:"Get all users"
     })
 })
+
+App.post("/users",(req,res)=>{
+    res.status(200).json({
+        status:"success",
+        message:"Message has been created"
+    })
+})
 App.listen(PORT,()=>{
     console.log(`Server listening on port : ${PORT} `)
 })
