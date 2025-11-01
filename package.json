@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "My portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Portfolio-Website"
+  ],
+  "author": "Zain Ul Abidin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
