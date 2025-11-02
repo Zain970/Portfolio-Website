@@ -5,10 +5,7 @@ const App = express()
 const PORT = 3000;
 
 
-App.get("/",(req,res)=>{
-    res.send("Hello world");
-})
-
+// GET : Get all users
 App.get("/users",(req,res)=>{
     res.status(200).json({
         status:'success',
@@ -16,10 +13,11 @@ App.get("/users",(req,res)=>{
     })
 })
 
-App.post("/users",(req,res)=>{
+// POST : Create new user
+App.post("/user",(req,res)=>{
     res.status(200).json({
         status:"success",
-        message:"Message has been created"
+        message:"User has been created"
     })
 })
 App.listen(PORT,()=>{
