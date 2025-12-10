@@ -20,6 +20,13 @@ App.post("/user",(req,res)=>{
         message:"User has been created"
     })
 })
+
+App.get("/",(req,res)=>{
+    res.status(200).json({
+        status:"success",
+        message:"Just test"
+    })
+})
 App.listen(PORT,()=>{
     console.log(`Server listening on port : ${PORT} `)
 })
